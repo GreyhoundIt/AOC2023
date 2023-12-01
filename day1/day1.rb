@@ -32,7 +32,7 @@ class Day1
   def sum_of_values(lines)
     lines.sum do |line|
       numbers = line.scan(/\d/)
-      ((numbers.first) + (numbers.last || numbers.first)).to_i
+      (numbers.first + numbers.last).to_i
     end
   end
 
